@@ -1,0 +1,261 @@
+<html>
+	<head>
+	<style>
+    .visibility-page1{
+      animation: page1-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page2{
+      animation: page2-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page3{
+      animation: page3-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page4{
+      animation: page4-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+    }
+		.visibility-page5{
+      animation: page5-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes page1-animationFrames{
+      0% {
+         transform:  translate(0px,0px);
+	 	     opacity: 0;
+      }
+			2% {
+         transform:  translate(0px,0px);
+	       opacity: 1;
+      }
+			18% {
+       	 transform:  translate(0px,0px);
+				 opacity: 1;
+      }
+      20% {
+       	 transform:  translate(200px,0px);
+	       opacity: 0;
+      }
+			100% {
+       	 transform:  translate(0px,0px);
+	       opacity: 0;
+      }
+    }
+    @keyframes page2-animationFrames{
+			0% {
+         transform:  translate(-200px,0px);
+	 	     opacity: 0;
+      }
+			20% {
+         transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+			22% {
+         transform:  translate(0px,0px);
+	       opacity: 1;
+      }
+			38% {
+       	 transform:  translate(0px,0px);
+				 opacity: 1;
+      }
+      40% {
+       	 transform:  translate(200px,0px);
+	       opacity: 0;
+      }
+			100% {
+       	 transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+    }
+    @keyframes page3-animationFrames{
+			0% {
+         transform:  translate(-200px,0px);
+	 	     opacity: 0;
+      }
+			40% {
+         transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+			42% {
+         transform:  translate(0px,0px);
+	       opacity: 1;
+      }
+			58% {
+       	 transform:  translate(0px,0px);
+				 opacity: 1;
+      }
+      60% {
+       	 transform:  translate(200px,0px);
+	       opacity: 0;
+      }
+			100% {
+       	 transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+    }
+    @keyframes page4-animationFrames{
+			0% {
+         transform:  translate(-200px,0px);
+	 	     opacity: 0;
+      }
+			60% {
+         transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+			62% {
+         transform:  translate(0px,0px);
+	       opacity: 1;
+      }
+			78% {
+       	 transform:  translate(0px,0px);
+				 opacity: 1;
+      }
+      80% {
+       	 transform:  translate(0px,0px);
+	       opacity: 0;
+      }
+			100% {
+       	 transform:  translate(-200px,0px);
+	       opacity: 0;
+      }
+    }
+
+		@keyframes page5-animationFrames{
+			0% {
+	 	     opacity: 0;
+      }
+			80% {
+	       opacity: 0;
+      }
+			82% {
+	       opacity: 1;
+      }
+			98% {
+				 opacity: 1;
+      }
+      100% {
+	       opacity: 0;
+      }
+		}
+
+		#banner {
+			width: 1100px;
+			height: 300px;
+			display:block;
+			overflow: hidden;
+    	position: relative;
+		}
+
+    #bg {
+      width: 1100px;
+      height: 300px;
+      background: url("baner-resources/common.png");
+      display:block;
+      position: absolute;
+    }
+
+		#summary {
+			width: 1100px;
+			height: 300px;
+			background: url("baner-resources/summary.png");
+			display:block;
+			position: absolute;
+		}
+
+    #page1 {
+      width:625px;
+      height:155px;
+      position: absolute;
+			background: url("baner-resources/page1.png");
+			top: 130px;
+			left: 250px;
+    }
+
+		#page2 {
+      width:608px;
+      height:176px;
+      position: absolute;
+			background: url("baner-resources/page2.png");
+			top: 110px;
+			left: 250px;
+    }
+
+		#page3 {
+			width:808px;
+			height:155px;
+			position: absolute;
+			background: url("baner-resources/page3.png");
+			top: 132px;
+			left: 255px;
+		}
+		#page4 {
+			width:597px;
+			height:174px;
+			position: absolute;
+			background: url("baner-resources/page4.png");
+			top: 115px;
+			left: 250px;
+		}
+
+    #chpl_white {
+      width: 23px;
+      height: 14px;
+      position: absolute;
+      background: url("baner-images/chpl_white.png");
+      top: 182px;
+      left: 274px;
+    }
+
+    #chpl {
+      width: 23px;
+      height: 14px;
+      position: absolute;
+      background: url("baner-images/chpl.png");
+      top: 182px;
+      left: 274px;
+    }
+
+    #link {
+      width: 1100px;
+      height: 300px;
+      position: absolute;
+      display: block;
+
+    }
+
+    #link_chpl {
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      display: block;
+      top: 180px;
+      left: 260px;
+    }
+	</style>
+	</head>
+	<body>
+    <div id="banner">
+
+      <div id="page1" class="visibility-page1">
+      </div>
+			<div id="page2" class="visibility-page2" >
+			</div>
+			<div id="page3"  class="visibility-page3">
+			</div>
+			<div id="page4"  class="visibility-page4" >
+			</div>
+			<div id="bg">
+			</div>
+			<div id="summary"  class="visibility-page5" >
+			</div>
+
+      <a id="link" href="http://www.aesciner.pl"></a>
+
+      <!-- <a id="link_chpl" href="http://pharmaway.pl/app/aesciner/CHPL.pdf"></a> -->
+    </div>
+	</body>
+
+</html>
